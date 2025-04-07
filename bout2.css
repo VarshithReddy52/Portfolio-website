@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+}
+
+.navbar {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar-details {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.links a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.about-me {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-me-info h1 {
+    font-size: 36px;
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-me-info-text {
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+.about-me-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.about-links {
+    font-size: 24px;
+    text-decoration: none;
+    color: orange;
+}
+
+.skills {
+    padding-top: 40px;
+}
+
+.skills-in {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skills-off {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .about-me-info h1 {
+        font-size: 28px;
+    }
+
+    .about-me-info-text {
+        font-size: 16px;
+    }
+
+    .about-links {
+        font-size: 20px;
+    }
+
+    .skills-in {
+        font-size: 20px;
+    }
+
+    .skills-off {
+        font-size: 16px;
+    }
+
+    .about-me-navbar {
+        justify-content: center;
+    }
+}

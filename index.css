@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background-color:black;
+
+}
+
+.navbar{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 2rem;
+
+}
+
+.links{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar-details{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.links a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px ;
+    padding-left: 60px ;
+    padding-right: 60px;
+    text-align: center;
+}
+
+.home-image-det {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+    
+}
+
+.home-info {
+    max-width: 600px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.name {
+    color: orange;
+    font-size: 2.8rem;
+}
+
+.profession {
+    color: orange;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.info {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.image {
+    width: 90%;
+    max-width: 310px;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .profession {
+        font-size: 1.2rem;
+    }
+
+    .info {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-image-det {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .profession {
+        font-size: 1rem;
+    }
+
+    .info {
+        font-size: 0.9rem;
+    }
+
+    .navbar-details {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar-details {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.links a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.contact {
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-left {
+    max-width: 500px;
+    flex: 1;
+}
+
+.contact-right {
+    max-width: 500px;
+    flex: 1;
+    padding-top:85px;
+}
+
+.contact-headings,
+.contact-headings-right {
+    font-size: 25px;
+    color: orange;
+}
+
+.contact-heading-info {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-info-right,
+.contact-infos-right {
+    width: 100%;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-infos-right {
+    height: 120px;
+    resize: none;
+}
+
+.contact-button {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-button:hover {
+    background-color: darkorange;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons-info {
+    font-size: 30px;
+    color: orange;
+    transition: color 0.3s;
+}
+
+.social-icons-info:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact-headings,
+    .contact-headings-right {
+        font-size: 22px;
+    }
+
+    .contact-heading-info {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-headings,
+    .contact-headings-right {
+        font-size: 20px;
+    }
+
+    .contact-heading-info {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        font-size: 16px;
+    }
+
+    .social-icons-info {
+        font-size: 25px;
+    }
+}
